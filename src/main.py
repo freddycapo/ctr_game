@@ -23,6 +23,8 @@ pig=Player( 380,
             heigth
             )
 
+cars=[[]]
+
 run=True
 while run:
     clock.tick(30)
