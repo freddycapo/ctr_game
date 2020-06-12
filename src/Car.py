@@ -9,4 +9,8 @@ class Car():
         self.h=h
         self.vel=vel
         self.sprite=sprite
+
+    def move(self):
+        pass
+
     
