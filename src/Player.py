@@ -15,6 +15,8 @@ class Player():
 
         self.walkcount=0
 
+        self.hitbox=pygame.Rect(self.x,self.y+30,self.w,self.h-30)
+
     def move(self):
         keys=pygame.key.get_pressed()
         
@@ -38,4 +40,7 @@ class Player():
         
         cur_frame=self.sprite[self.walkcount//3]
         screen.blit(pygame.transform.scale(cur_frame,(self.w,self.h)),(self.x,self.y))
-        pygame.display.update()
+        self.hitbox=pygame.Rect(self.x,self.y+30,self.w,self.h-30)
+        #pygame.draw.rect(screen,(255,0,0),self.hitbox,1)
+
+
