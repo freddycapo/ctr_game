@@ -1,6 +1,6 @@
 import cx_Freeze
 
-executables = [cx_Freeze.Executable("src/main.py")]
+executables = [cx_Freeze.Executable("main.py")]
 
 cx_Freeze.setup(
     name="Corona Videogame",
@@ -8,7 +8,7 @@ cx_Freeze.setup(
         "build_exe": {
             "packages": ["pygame"],
             "include_files": [
-                ("src/images/","images","src/Car.py","src/Player.py")
+                ("images")
             ]
         }
     },
