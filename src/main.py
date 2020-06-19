@@ -1,5 +1,4 @@
 import pygame
-from pygame import *
 import random
 
 from Car import Car

@@ -32,5 +32,5 @@ class Car():
 
         screen.blit(pygame.transform.scale(image,(self.w,self.h)),(self.x,self.y))
         self.hitbox=pygame.Rect(self.x+5,self.y+5,self.w-5,self.h-5)
-        pygame.draw.rect(screen,(0,0,255),self.hitbox,1)
+        #pygame.draw.rect(screen,(0,0,255),self.hitbox,1)
         
